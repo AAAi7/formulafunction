@@ -1,9 +1,9 @@
 
 
-function converttemp()
+function converttemp(c)
 {
     var a;
-    var c = document.getElementById("txtvalue1").value;
+
 
     a=parseInt(c);
     a=a*2;
@@ -11,14 +11,12 @@ function converttemp()
     window.alert(c+" Celsius is "+a+" Fahrenheit");
 
 }
-function surfacearea()
+function surfacearea(base,height,type)
 {
-    var base = document.getElementById("txtvalue2").value;
-    var height = document.getElementById("txtvalue3").value;
-    var type = document.getElementById("inputtype1").value;
 
 
-    if( document.getElementById("inputtype1").checked)
+
+    if( type.checked==true)
     {
         var c;
         c=base*height/2;
@@ -32,6 +30,12 @@ function surfacearea()
         window.alert(c);
 
     }
+
+
+
+
+}
+
 
 
 

@@ -1,66 +1,70 @@
 body{
-    text-align: center;
+  text-align: center;
 }
 .title
 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-    color: black;
-    display: block;
-    float: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  color: black;
+  display: block;
+
 }
 .lbl{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: gray;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: gray;
 }
 input{
-    text-align:center;
-    width: 50px;
+  text-align:center;
+  width: 50px;
 }
 .radio
 {
-    display: inline;
+  display: inline;
 }
 #panel1
 {
-    width: 200px;
-    float: left;
-    padding-top: 20px;
-    padding-left:30px;
-    margin-right: 150px;
+  width: 200px;
+  float: left;
+  padding-top: 20px;
+  padding-left:30px;
+  margin-right: 150px;
 }
 #panel2
 {
-    float:left ;
-    padding-top: 20px;
-    padding-left:30px;
-    width: 450px;
+  float:left ;
+  padding-top: 20px;
+  padding-left:30px;
+  width: 450px;
 }
 #btnconverttemp
 {
-    background-color: #f44336;    
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-style: solid;
-    border-color: grey;
-    width: 70px;;
-    border-width: 1px;
-    display: block;
-    position: absolute;
+  background-color: #f44336;    
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-style: solid;
+  border-color: grey;
+  width: 70px;;
+  border-width: 1px;
+  display: block;
+  margin-top: 30px;
+  margin-left: 80px;
+ 
 
 
 }
 #btnsurfacearea
 {
-    background-color: #f44336;    
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-style: solid;
-    border-color: grey;
-    width: 70px;;
-    border-width: 1px;
-    display: block;
-    position: absolute;
+  background-color: #f44336;    
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-style: solid;
+  border-color: grey;
+  width: 70px;;
+  border-width: 1px;
+  display: block;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 30px;
 
 
 }

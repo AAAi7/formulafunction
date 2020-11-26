@@ -1,37 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css">
-
-  </head>
-    <body>
-        <title>formula</title>
-        <panel id="panel1">
-          <h1 class="title">Temp Convertor</h1>
-          <label class="lbl">Temp:</label>
-          <input id="txtvalue1">
-          <br>
-          <label id="btnconverttemp">Submit</label>
-        </panel>
-        <panel id="panel2">
-          <h1 class="title">Surface area</h1>
-          <label class="lbl">base:</label>
-          <input id="txtvalue2">
-          <label class="lbl">height:</label>
-          <input id="txtvalue3">
-          <br>
-          <br>
-          <input id="rad1" type="radio" name="rad" value="Triangle">
-          <label for="rad1" class="lbl">Triangle</label>
-          <input id="rad2" type="radio" name="rad" value="Square">
-          <label for="rad2" class="lbl">Square</label>
-          <br>
-          <label id="btnsurfacearea">Submit</label>
-        </panel>
+document.getElementById("btnsurfacearea").addEventListener("click",surfacearea);
+document.getElementById("btnconverttemp").addEventListener("click",converttemp);
 
 
-    </body>
-    
-    <script src="main.js"></script>
 
-</html>
+function converttemp(c)
+{
+    var a;
+
+
+    a=parseInt(c);
+    a=a*2;
+    a+=30;
+    window.alert(c+" Celsius is "+a+" Fahrenheit");
+
+}
+function surfacearea()
+{
+  let base=document.getElementById('txtvalue2').value;
+  let height=document.getElementById('txtvalue3').value;
+  let type=document.getElementById('rad1').checked;
+  
+
+
+    if( type==true)
+    {
+        var c;
+        c=base*height/2;
+        window.alert("surface area is "+c);
+
+    }
+    else
+    {
+        var c;
+        c=base*height;
+        window.alert("surface area is "+c);
+
+    }
+
+
+
+
+}
+
+
+
+
+

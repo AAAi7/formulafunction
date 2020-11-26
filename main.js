@@ -1,43 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+    <body>
+        <title>formula</title>
+        <panel id="panel1">
+          <h1 class="title">Temp Convertor</h1>
+          <label class="lbl">Temp:</label>
+          <input id="txtvalue1">
+          <br>
+          <label id="btnconverttemp">Submit</label>
+        </panel>
+        <panel id="panel2">
+          <h1 class="title">Surface area</h1>
+          <label class="lbl">base:</label>
+          <input id="txtvalue2">
+          <label class="lbl">height:</label>
+          <input id="txtvalue3">
+          <br>
+          <br>
+          <input id="rad1" type="radio" name="rad" value="Triangle">
+          <label for="rad1" class="lbl">Triangle</label>
+          <input id="rad2" type="radio" name="rad" value="Square">
+          <label for="rad2" class="lbl">Square</label>
+          <br>
+          <label id="btnsurfacearea">Submit</label>
+        </panel>
 
 
-function converttemp(c)
-{
-    var a;
+    </body>
+    
+    <script src="main.js"></script>
 
-
-    a=parseInt(c);
-    a=a*2;
-    a+=30;
-    window.alert(c+" Celsius is "+a+" Fahrenheit");
-
-}
-function surfacearea(base,height,type)
-{
-
-
-
-    if( type.checked==true)
-    {
-        var c;
-        c=base*height/2;
-        window.alert(c);
-
-    }
-    else
-    {
-        var c;
-        c=base*height;
-        window.alert(c);
-
-    }
-
-
-
-
-}
-
-
-
-
-
-}
+</html>

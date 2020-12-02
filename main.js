@@ -1,11 +1,24 @@
-document.getElementById("btnsurfacearea").addEventListener("click",surfacearea);
-document.getElementById("btnconverttemp").addEventListener("click",converttemp);
+document.getElementById("btnsurfacearea").addEventListener("click",surfacearea1);
+document.getElementById("btnconverttemp").addEventListener("click",converttemp1);
 
+function surfacearea1()
+{
+    let base=document.getElementById('txtvalue2').value;
+  let height=document.getElementById('txtvalue3').value;
+  let type=document.getElementById('rad1').checked;
+  surfacearea(base,height,type);
 
-
-function converttemp()
+}
+function converttemp1()
 {
     c=document.getElementById("txtvalue1").value;
+    converttemp(c);
+
+
+}
+
+function converttemp(c)
+{
     var a;
 
 
@@ -15,11 +28,9 @@ function converttemp()
     window.alert(c+" Celsius is "+a+" Fahrenheit");
 
 }
-function surfacearea()
+function surfacearea(base,height,type)
 {
-  let base=document.getElementById('txtvalue2').value;
-  let height=document.getElementById('txtvalue3').value;
-  let type=document.getElementById('rad1').checked;
+  
   
 
 
@@ -42,8 +53,3 @@ function surfacearea()
 
 
 }
-
-
-
-
-

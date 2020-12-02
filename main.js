@@ -6,13 +6,15 @@ function surfacearea1()
     let base=document.getElementById('txtvalue2').value;
   let height=document.getElementById('txtvalue3').value;
   let type=document.getElementById('rad1').checked;
-  surfacearea(base,height,type);
+  
+  window.alert("surface area is "+surfacearea(base,height,type));
+   
 
 }
 function converttemp1()
 {
     c=document.getElementById("txtvalue1").value;
-    converttemp(c);
+    window.alert(" Celsius is "+converttemp(c)+" Fahrenheit");
 
 
 }
@@ -25,7 +27,7 @@ function converttemp(c)
     a=parseInt(c);
     a=a*2;
     a+=30;
-    window.alert(c+" Celsius is "+a+" Fahrenheit");
+    return a;
 
 }
 function surfacearea(base,height,type)
@@ -38,14 +40,13 @@ function surfacearea(base,height,type)
     {
         var c;
         c=base*height/2;
-        window.alert("surface area is "+c);
-
+        return c;
     }
     else
     {
         var c;
         c=base*height;
-        window.alert("surface area is "+c);
+        return c;
 
     }
 
